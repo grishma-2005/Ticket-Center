@@ -1,0 +1,64 @@
+/* src/components/Pagination.module.css */
+.paginationContainer {
+    display: flex;
+    justify-content: flex-end; /* Align everything to the right */
+    align-items: flex-start;
+    margin-top: 20px;
+    color: #6c757d;
+    font-size: 0.9rem;
+  }
+  
+  .rightSection {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-end; /* Align content to the right */
+  }
+  
+  .rowsPerPage {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* More space below "Rows per page" */
+  }
+  
+  .rowsPerPage select {
+    margin-left: 5px;
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  
+  .pageControlsAndInfo {
+    display: flex;
+    flex-direction: column; /* Stack controls and info vertically */
+    align-items: flex-end; /* Align to the right */
+  }
+  
+  .pageControls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; /* Space between controls and info */
+  }
+  
+  .pageControls button {
+    padding: 6px 10px;
+    margin: 0 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1;
+  }
+  
+  .pageControls button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  
+  .pageControls button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }

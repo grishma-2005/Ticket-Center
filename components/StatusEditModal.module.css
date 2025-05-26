@@ -1,0 +1,105 @@
+/* src/components/Sidebar.css */
+.sidebar-logo {
+  margin-bottom: 30px;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu-item {
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+
+.sidebar-menu-item:hover {
+  background-color: #e9ecef;
+}
+
+.sidebar-menu-item.active {
+  background-color: #007bff; /* Example active color */
+  color: white;
+  font-weight: bold;
+}                Slidebar.css file                                                                                                         .modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 350px;
+  max-width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.statusOptions {
+  margin: 20px 0;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.statusLabel {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.inprogress {
+  color: #6c757d;
+}
+
+.resolved {
+  color: #6c757d;
+}
+
+.closed {
+  color: #6c757d;
+}
+
+.modalActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.modalActions button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.cancelButton {
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+}
+
+.saveButton {
+  background: #007bff;
+  color: white;
+  border: none;
+}

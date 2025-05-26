@@ -1,0 +1,76 @@
+/* StatusEditSidebar.module.css */
+.sidebarOverlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: flex-end; /* Align sidebar to the right */
+    z-index: 1001; /* Higher than the modal overlay if you had one */
+  }
+  
+  .sidebar {
+    background: white;
+    padding: 20px;
+    border-left: 1px solid #eee;
+    width: 300px; /* Adjust the width as needed */
+    max-width: 80%;
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* In case the content is long */
+  }
+  
+  .statusOptions {
+    margin: 20px 0;
+  }
+  
+  .option {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    cursor: pointer;
+  }
+  
+  .statusLabel {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .inprogress {
+    color: #ffc107;
+  }
+  
+  .resolved {
+    color: #28a745;
+  }
+  
+  .closed {
+    color: #6c757d;
+  }
+  
+  .sidebarActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .sidebarActions button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .cancelButton {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+  }
+  
+  .saveButton {
+    background: #007bff;
+    color: white;
+    border: none;
+  }

@@ -1,0 +1,205 @@
+/* src/components/TicketCenter.module.css */
+.ticketCenterContainer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; /* Ensure it takes at least the full height of its parent */
+  }
+  
+  .headerWithLogo {
+    display: flex;
+    align-items: center;
+    margin-bottom: space-between;
+    gap: 20px;
+  }
+  
+  
+  .logo {
+    max-height: 30px; /* Adjust logo size as needed */
+    margin-right: 15px;
+  }
+  
+  .headerWithLogo h2 {
+    margin: 0;
+    flex-grow: 1;
+  }
+  
+  .search-bar {
+    margin-left: auto;
+  }
+  
+  .search-bar input[type="text"] {
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 200px;
+  }
+  /* src/components/TicketCenter.module.css */
+/* Existing styles... */
+
+.tableAndSidebarContainer {
+  display: flex;
+  flex-grow: 1; /* Allow it to take available vertical space */
+}
+
+.ticketTableContainer {
+  flex-grow: 1; /* Table takes the remaining space */
+  margin-right: 20px; /* Add some space between table and sidebar */
+}
+
+/* Existing paginationContainer styles... */
+  /* Style for the pagination container (moved here for completeness) */
+  .paginationContainer {
+    display: flex;
+    justify-content: flex-end; /* Overall alignment to the right */
+    align-items: center;
+    margin-top: 20px;
+    color: #6c757d;
+    font-size: 0.9rem;
+  }
+  
+  .paginationContainer .leftSection {
+    margin-right: auto; /* Push page info to the left */
+  }
+  
+  .paginationContainer .rightSection {
+    display: flex;
+    align-items: center;
+  }
+  
+  .paginationContainer .rowsPerPage {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .paginationContainer .rowsPerPage select {
+    margin-left: 5px;
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  
+  .paginationContainer .pageControls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .paginationContainer .pageControls button {
+    padding: 6px 10px;
+    margin: 0 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1;
+  }
+  
+  .paginationContainer .pageControls button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  
+  .paginationContainer .pageControls button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .paginationContainer .pageInfo {
+    margin-left: 20px;
+  }
+
+  /* src/components/TicketCenter.module.css */
+/* Existing styles... */
+
+.addTicketButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 20px;
+}
+
+.addTicketButton:hover {
+  background-color: #0056b3;
+}
+
+.addTicketModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1002; /* Higher than the edit sidebar */
+}
+
+.addTicketModal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.addTicketModal h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.formGroup input[type="text"],
+.formGroup textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.formActions button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.formActions .cancelButton {
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+}
+
+.formActions .saveButton {
+  background: #28a745; /* Green color for add */
+  color: white;
+  border: none;
+}
